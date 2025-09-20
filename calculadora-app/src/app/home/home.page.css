@@ -1,0 +1,103 @@
+.calculadora-container {
+  padding: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.conexion-chip {
+  margin: 0 0 16px 0;
+  display: block;
+  width: fit-content;
+}
+
+.numero-input {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.botones-container {
+  margin: 20px 0 10px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.botones-container ion-button {
+  height: 50px;
+  font-weight: bold;
+}
+
+.resultado-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.resultado-display {
+  text-align: center;
+  padding: 10px;
+}
+
+.resultado-display h2 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.resultado-numero {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.historial-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.historial-item {
+  --padding-start: 0;
+  margin-bottom: 8px;
+}
+
+.operacion-icon {
+  font-size: 24px;
+  margin-right: 12px;
+  width: 40px;
+  text-align: center;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #666;
+}
+
+.empty-state ion-icon {
+  margin-bottom: 16px;
+  color: #ccc;
+}
+
+.empty-state h3 {
+  margin: 0 0 8px 0;
+}
+
+.empty-state p {
+  margin: 0;
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .calculadora-container {
+    padding: 12px;
+  }
+
+  .botones-container {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .resultado-numero {
+    font-size: 28px;
+  }
+}
